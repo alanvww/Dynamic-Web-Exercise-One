@@ -1,10 +1,10 @@
 import React from "react";
 
 function ArticleListing(){
-    const articleName = "ss"
+    const articleName = "Article List"
     return(
-        <div>
-            <h1>{articleName}</h1>
+        <div className="PageWrapper">
+            <h1 className="HeaderOne">{articleName}</h1>
         </div>
     )
 }
