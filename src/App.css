@@ -7,4 +7,52 @@
 .HeaderOne{
     font-size: 80px;
     font-weight: normal;
+    margin: 0;
+}
+
+.ArticleListingHeader{
+    margin: 60px 0;
+}
+
+.ArticleCardWrapper{
+    align-items: flex-start;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.ArticleCardImage{
+    flex-basis: 35%;
+    padding: 20px;
+
+}
+
+.ArticleCardImage img{
+    height: auto;
+    width: 100%;
+}
+
+.ArticleCardText{
+    flex-basis: 65%;
+}
+
+.ArticleCardTitle{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.ArticleCardDate{
+    
+}
+
+.ArticleCardBlurb{
+    
+}
+
+.ArticleCardLink a{
+    font-weight: bold;
 }

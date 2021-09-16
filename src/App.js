@@ -12,7 +12,6 @@ function App() {
         <Route path="/Article">
           <Article />
         </Route>
-
         <Route path="/">
           <ArticleListing />
         </Route>
