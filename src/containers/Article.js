@@ -11,15 +11,25 @@ function Article() {
 		setArticle(dataToSet);
 	}, [id]);
 
+	const newDate = new Date(article.publishedDate);
+	const dateString = newDate.toDateString();
+
 	if (!article) return <p>No Article</p>;
 
 	return (
 		<main>
-			<section className="ArticleHeader">
+			<section
+				className="ArticleHeader"
+				style={{
+					backgroundImage: `url('${article.image && article.image.url}')`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+				}}
+			>
 				<div className="ArticleHeaderText">
 					<h1 className="HeaderOneStyle">{article.title}</h1>
-					<p className="ArticleCardDate">{article.publishedDate}</p>
-					<p className="ArticleHeaderBlurb">{article.blurb}</p>
+					<p className="ArticleCardDate">{dateString}</p>
+					<p className="	ArticleHeaderBlurb">{article.blurb}</p>
 				</div>
 			</section>
 
@@ -36,7 +46,7 @@ function Article() {
 							case `h3`:
 								return <h3 key={i}>{text.data}</h3>;
 							default:
-								break;
+								return <p key={i}>{text.data}</p>;
 						}
 					})}
 				<h3>Header Three</h3>
