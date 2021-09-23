@@ -11,7 +11,7 @@ function ArticleCard({ article }){
                 <p className="ArticleCardDate">{article.publishedDate}</p>
                 <p className="ArticleCardBlurb">{article.blurb}</p>
                 <p className="ArticleCardLink">
-                    <a href="#">Read More</a>
+                    <a href={"/article/" + article.id}>Read More</a>
                 </p>
             </div>
         </div>

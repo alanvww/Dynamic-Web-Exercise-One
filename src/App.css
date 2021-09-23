@@ -4,7 +4,7 @@
     padding: 0 25px;
 }
 
-.HeaderOne{
+.HeaderOneStyle{
     font-size: 80px;
     font-weight: normal;
     margin: 0;
@@ -55,4 +55,47 @@
 
 .ArticleCardLink a{
     font-weight: bold;
+}
+
+.ArticleHeader{
+    background-color: #c4c4c4;
+    padding: 40px 0;
+}
+
+.ArticleHeaderText{
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 0 25px;
+}
+
+
+.ArticleHeaderBlurb{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.ArticleText{
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 0 25px;
+
+}
+
+.ArticleText p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.ArticleText h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.ArticleText h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
 }
